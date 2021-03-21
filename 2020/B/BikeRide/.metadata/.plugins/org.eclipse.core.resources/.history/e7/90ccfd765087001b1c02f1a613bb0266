@@ -1,0 +1,93 @@
+import java.util.*;
+
+
+class Solution{
+	Scanner scan=new Scanner(System.in);
+    public static void main(String args[])throws Exception 
+    {
+        Solution sol=new Solution();
+        int tcc=sol.si();
+        sol.solve(tcc);
+        
+    }
+    
+     void solve(int tcc)
+    {
+        
+        ArrayList<Integer> al=new ArrayList<Integer>();
+        //LinkedList ll=new LinkedList();
+       // ArrayDeque adq=new ArrayDeque();
+       // PriorityQueue pq=new PriorityQueue();
+        //TreeSet ts=new TreeSet();
+        //HashSet hs=new HashSet();
+        //LinkedHashSet lhs=new LinkedHashSet();
+        
+        
+        for(int i=1;i<=tcc;++i)
+        {
+         int ans=0;
+         
+         
+            output(i,ans);
+        }
+        
+    }
+        
+    void output(int tc,int answer)
+    {
+        System.out.println("case #"+tc+": "+answer);
+    }
+    
+    //single integer input
+    int si()
+    {
+
+        @SuppressWarnings("resource")
+		
+        int x= Integer.parseInt(scan.nextLine());
+     
+        return x;
+    }
+    
+    //Multiple integer input in single line saprated by space
+    ArrayList<Integer> mi()
+    {
+        @SuppressWarnings("resource")
+		
+        String s= scan.nextLine();
+        String[] s1=s.split(" ",0);
+        ArrayList<Integer> al=new ArrayList<Integer>();
+        for(int i=0;i<s1.length;++i)
+        {
+            al.add(Integer.parseInt(s1[i]));
+        }
+       
+        return al;
+        
+    }
+    
+    
+    //single string input
+    String ssi()
+    {
+
+        @SuppressWarnings("resource")
+		
+        String s=scan.nextLine(); 
+        return s;
+        
+    }
+    
+    //Multiple String input in single line saprated by space
+    String[] msiInput()
+    {
+        @SuppressWarnings("resource")
+	
+        String s= scan.nextLine();
+        String[] s1=s.split(" ",0);
+       
+        return s1;
+        
+    }    
+       
+}
