@@ -12,7 +12,7 @@ import java.util.StringTokenizer;
 
 public class Solution {
 
-	// Discuss this round on Codeforces: kc=k;
+	
 	
 	static BufferedReader in;
 	static PrintWriter out;
@@ -72,30 +72,30 @@ public class Solution {
 		
 		  int kc=k;
 		  for(int i=0;i<n;++i)
-          {
-			 int a=scanInt();
-      	    if(a==kc) {
-      	    	if(kc==1) 
-      	        	{   
+                  {
+	            int a=scanInt();
+      	            if(a==kc) {
+      	    	    if(kc==1) 
+      	            {   
       	    		 kc=k;
-   			   		 ++ans;
+   			 ++ans;
       	            }
-      	    	else
-      	    	{
-   			  	    --kc;
-      	        }
-      	    }
+      	    	    else
+      	    	    {
+   			 --kc;
+      	            }
+      	         }
    			   		
-      	    else if(a==k) {
-      	    	kc=k-1;
-      	    }
+      	         else if(a==k) {
+      	    	 kc=k-1;
+      	       }
       	    	
       	    else {
       	    	kc=k;
-      	    }
+      	       }
       	    	
           } 
-		output+="case #"+test+": "+ans+"\n";
+            output+="case #"+test+": "+ans+"\n";
 	}
 
 	static int scanInt() throws IOException {
